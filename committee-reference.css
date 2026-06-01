@@ -1,0 +1,234 @@
+.committee-page-main {
+  padding-top: 148px;
+  background: #fff;
+}
+
+.committee-page-main .main-content {
+  background: #fff;
+}
+
+.committee-section {
+  background: #fff;
+  padding: 80px 0;
+}
+
+.committee-section > .container {
+  width: min(1400px, calc(100% - 72px));
+}
+
+.committee-section .section-title {
+  position: relative;
+  margin: 0 0 48px;
+  padding-bottom: 15px;
+  color: var(--forest);
+  font-family: "Manrope", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.committee-section .section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--forest), var(--forest-deep));
+  transform: translateX(-50%);
+}
+
+.committee-block {
+  margin-bottom: 60px;
+  scroll-margin-top: 110px;
+}
+
+.committee-block:last-child {
+  margin-bottom: 0;
+}
+
+.committee-block-title {
+  margin: 0 0 40px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid var(--forest);
+  color: var(--forest);
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.committee-category {
+  margin-bottom: 50px;
+}
+
+.committee-category:last-child {
+  margin-bottom: 0;
+}
+
+.committee-category-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.committee-category-row .committee-category {
+  margin-bottom: 0;
+}
+
+.category-title {
+  margin: 0 0 30px;
+  padding-left: 15px;
+  border-left: 4px solid var(--forest);
+  color: var(--forest);
+  font-family: "Manrope", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.org-committees .committee-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.member-item {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #f8fbfa;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.member-item:hover {
+  background: #edf7f2;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(26, 67, 58, 0.1);
+}
+
+.member-photo {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border: 3px solid var(--forest);
+  border-radius: 50%;
+  background: #fff;
+}
+
+.member-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-info {
+  flex: 1;
+}
+
+.member-name {
+  margin: 0 0 8px;
+  color: var(--forest);
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.member-title {
+  margin: 0 0 5px;
+  color: var(--muted);
+  font-size: 14px;
+  font-style: italic;
+}
+
+.member-affiliation {
+  margin: 0 0 5px;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.member-distinction {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+  .org-committees .committee-members {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+  }
+}
+
+@media (max-width: 860px) {
+  .committee-page-main {
+    padding-top: 134px;
+  }
+}
+
+@media (max-width: 768px) {
+  .committee-section {
+    padding: 50px 0;
+  }
+
+  .committee-section > .container {
+    width: min(100% - 32px, 1400px);
+  }
+
+  .committee-section .section-title {
+    margin-bottom: 36px;
+    font-size: 28px;
+  }
+
+  .committee-block-title {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+
+  .category-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .org-committees .committee-members {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .member-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .member-photo {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .committee-section .section-title {
+    font-size: 24px;
+  }
+
+  .committee-block-title {
+    font-size: 22px;
+  }
+
+  .category-title {
+    font-size: 18px;
+  }
+
+  .member-name {
+    font-size: 16px;
+  }
+
+  .member-affiliation {
+    font-size: 14px;
+  }
+}
