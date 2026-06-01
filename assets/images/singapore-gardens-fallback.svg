@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Singapore Gardens by the Bay fallback image</title>
+  <desc id="desc">Stylized Supertree Grove scene with glowing garden canopy and a twilight sky.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#102935"/>
+      <stop offset="55%" stop-color="#1a433a"/>
+      <stop offset="100%" stop-color="#0c1826"/>
+    </linearGradient>
+    <linearGradient id="canopy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a7f3b7"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#sky)"/>
+  <circle cx="862" cy="160" r="92" fill="#ffb703" opacity="0.14" filter="url(#glow)"/>
+  <path d="M0 722C210 648 394 674 574 640C750 606 948 570 1200 618V900H0Z" fill="#0e1f2c"/>
+  <g transform="translate(230 136)">
+    <path d="M178 40C268 40 348 104 362 208C376 310 304 386 198 402C74 420 -32 340 -44 224C-54 114 26 52 178 40Z" fill="rgba(168,243,183,0.22)" stroke="url(#canopy)" stroke-width="6"/>
+    <path d="M162 318L188 590" stroke="url(#canopy)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M68 154L182 252L304 146" stroke="url(#canopy)" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M28 244L182 284L338 228" stroke="url(#canopy)" stroke-width="8" stroke-linecap="round" fill="none"/>
+  </g>
+  <g transform="translate(640 182) scale(0.82)">
+    <path d="M178 40C268 40 348 104 362 208C376 310 304 386 198 402C74 420 -32 340 -44 224C-54 114 26 52 178 40Z" fill="rgba(125,211,252,0.18)" stroke="url(#canopy)" stroke-width="6"/>
+    <path d="M162 318L188 590" stroke="url(#canopy)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M68 154L182 252L304 146" stroke="url(#canopy)" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M28 244L182 284L338 228" stroke="url(#canopy)" stroke-width="8" stroke-linecap="round" fill="none"/>
+  </g>
+  <path d="M88 772H1108" stroke="rgba(255,255,255,0.22)" stroke-width="2"/>
+</svg>
