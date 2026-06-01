@@ -157,6 +157,19 @@
   line-height: 1.4;
 }
 
+.committee-empty {
+  padding: 24px 28px;
+  border: 1px dashed rgba(26, 67, 58, 0.2);
+  border-radius: 12px;
+  background: #f8fbfa;
+}
+
+.committee-empty p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+
 @media (max-width: 1024px) {
   .org-committees .committee-members {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
