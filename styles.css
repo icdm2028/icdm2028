@@ -498,9 +498,9 @@ svg {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center 58%;
-  transform: scale(0.93);
+  object-fit: cover;
+  object-position: center 44%;
+  transform: scale(1.02);
   opacity: 0.98;
 }
 
@@ -2156,7 +2156,8 @@ svg {
   }
 
   .hero-banner-photo {
-    transform: scale(0.98);
+    transform: scale(1);
+    object-position: center 44%;
   }
 
   .hero-slider-controls {
